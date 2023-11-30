@@ -1,0 +1,28 @@
+.work {
+  margin-left: 140px;
+  height: 90vh;
+}
+
+.work-exp {
+  padding: 10px 0px;
+}
+
+.work-exp h2 {
+  font-weight: bold;
+  color: whitesmoke;
+    font-family: "Poppins";
+}
+
+.work-exp hr {
+  color: #138781;
+  width: 400px;
+  margin: 10px auto;
+}
+
+.work-exp .vertical-timeline-element-title {
+color:white;
+}
+
+.work-exp .vertical-timeline-element-subtitle {
+    color: #AAA6C3;
+}

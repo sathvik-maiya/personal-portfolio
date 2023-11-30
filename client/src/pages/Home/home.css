@@ -1,0 +1,88 @@
+
+.home-container {
+  height: 100vh;
+  color: white;
+  margin-left: 70px;
+
+  
+}
+.home-content{
+  display: flex;
+  justify-content: space-between;
+gap:90px;
+ 
+
+}
+.soft{
+  color: #c3ee26;
+}
+.name{
+      color: #59c378;
+}
+.data{
+  margin-top: 200px;
+  padding-left: 50px;
+}
+.home-pic{
+  margin-top: 80px;
+ 
+
+}
+.home-content h2 {
+  padding: 5px;
+ }
+ .hi{
+  margin-left: 80px;
+  }
+
+  .name-head{
+    display: inline-block;
+    font-size: 32px;
+  }
+  .name-body{
+    display: inline-block;
+    text-align: center;
+  }
+.p0{
+  font-size: 1.1rem;
+}
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+ 20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+

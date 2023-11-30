@@ -1,0 +1,90 @@
+.contact {
+  margin-left: 130px;
+  margin-bottom: 60px;
+  padding-top: 50px;
+  height: 80vh;
+
+}
+
+.conhead{
+    font-weight: bold;
+      color: whitesmoke;
+      font-family: "Poppins";
+}
+.card2 {
+  margin: 0px 30px;
+  background-color: #050816;
+  border-radius: 15px;
+  margin-top: 50px;
+
+
+}
+
+.continfo{
+  margin-top: 120px;
+}
+
+
+
+::placeholder {
+  color: #bdbdbd;
+  opacity: 1;
+  font-weight: 300;
+}
+.loc{
+  margin-left: 100px;
+  margin-bottom: 20px;
+  color:whitesmoke;
+  text-decoration: none;
+  cursor: pointer;
+    font-family: "Poppins";
+    font-size: 15px;
+}
+
+.log{
+  margin-left: 100px;
+  cursor: pointer;
+}
+input,
+textarea {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 100%;
+  color: whitesmoke;
+  background-color: #151030;
+  font-size: 1rem;
+  letter-spacing: 1px;
+ 
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: none !important;
+  outline-width: 0px;
+}
+
+button:focus {
+  box-shadow: none;
+  outline-width: 0px;
+ 
+}
+
+.button {
+  background-color: #151030;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  margin-top: 15px;
+  padding: 10px;
+  margin-left: 10px;
+  font-family: "Poppins";
+}
+
+.button:hover {
+  background-color: #000;
+  color: white;
+}
+

@@ -1,0 +1,40 @@
+.techstack {
+  padding-left: 180px;
+  margin-top: 80px;
+  height: 100vh;
+}
+.techstack hr {
+color: #59c378;
+  width: 200px;
+  margin: 15px auto;
+}
+
+.techstack h2 {
+  font-weight: bold;
+color: white;
+font-family: "Poppins";
+}
+
+.techstack .card {
+  cursor: pointer;
+    background-color:#14143a;
+    color: white;
+    height: 80px;
+    width: 180px;
+}
+
+.techstack .tech-icon {
+  font-size: 2rem;
+  margin-right: 20px;
+
+}
+.exp{
+  font-size: 0.7rem;
+color: #aee2bf;
+}
+
+
+.techstack .card:hover {
+transform: scale(1.2);
+}
+
