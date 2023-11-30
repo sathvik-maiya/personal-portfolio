@@ -17,7 +17,7 @@ const Contact = () => {
       if (!name || !email || !msg) {
         toast.error("Please Provide all fields");
       }
-      const res = await axios.post("http://localhost:8080/api/v1/portfolio/sendEmail", {
+      const res = await axios.post("/api/v1/portfolio/sendEmail", {
         name,
         email,
         msg,
