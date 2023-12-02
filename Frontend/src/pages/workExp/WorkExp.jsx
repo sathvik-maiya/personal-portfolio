@@ -12,7 +12,7 @@ const WorkExp = () => {
       <div className="work" id="work">
         <div className="container work-exp">
           <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
-            Work Experience
+            Work {" "} <span className="text-primary">Experience</span>
           </h2>
           <hr />
           <VerticalTimeline lineColor="#1e1e2c">

@@ -1,50 +1,52 @@
 .contact {
   margin-left: 130px;
-  margin-bottom: 60px;
-  padding-top: 50px;
-  height: 80vh;
+  margin-top: 40px;
+  height: 110vh;
 
 }
 
-.conhead{
-    font-weight: bold;
-      color: whitesmoke;
-      font-family: "Poppins";
+.conhead {
+  font-weight: bold;
+  color: whitesmoke;
+  font-family: "Poppins";
 }
+
 .card2 {
   margin: 0px 30px;
   background-color: #050816;
   border-radius: 15px;
   margin-top: 50px;
-
-
 }
 
-.continfo{
-  margin-top: 120px;
+.foo-bar {
+  margin-right: 50px;
 }
 
-
+.continfo {
+  margin-top: 150px;
+}
 
 ::placeholder {
   color: #bdbdbd;
   opacity: 1;
   font-weight: 300;
 }
-.loc{
+
+.loc {
   margin-left: 100px;
   margin-bottom: 20px;
-  color:whitesmoke;
+  color: whitesmoke;
   text-decoration: none;
   cursor: pointer;
-    font-family: "Poppins";
-    font-size: 15px;
+  font-family: "Poppins";
+  font-size: 15px;
 }
 
-.log{
+.log {
   margin-left: 100px;
   cursor: pointer;
 }
+
 input,
 textarea {
   padding: 10px 12px;
@@ -57,7 +59,7 @@ textarea {
   background-color: #151030;
   font-size: 1rem;
   letter-spacing: 1px;
- 
+
 }
 
 input:focus,
@@ -69,7 +71,7 @@ textarea:focus {
 button:focus {
   box-shadow: none;
   outline-width: 0px;
- 
+
 }
 
 .button {
@@ -87,4 +89,3 @@ button:focus {
   background-color: #000;
   color: white;
 }
-

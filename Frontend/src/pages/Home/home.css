@@ -1,51 +1,97 @@
-
 .home-container {
   height: 100vh;
-  color: white;
-  margin-left: 70px;
-
-  
-}
-.home-content{
+  margin-left: 150px;
   display: flex;
-  justify-content: space-between;
-gap:90px;
- 
+  flex-direction: row;
+
 
 }
-.soft{
-  color: #c3ee26;
+
+.hi {
+  font-family: "Poppins";
 }
-.name{
-      color: #59c378;
-}
-.data{
-  margin-top: 200px;
-  padding-left: 50px;
-}
-.home-pic{
-  margin-top: 80px;
- 
+
+.home-buttons .btn-cm {
+  color: #fff;
+  background-color: #4169E1;
+  border-color: #4169E1;
+  padding: 6px 20px 6px 20px;
+
 
 }
-.home-content h2 {
-  padding: 5px;
- }
- .hi{
-  margin-left: 80px;
-  }
 
-  .name-head{
-    display: inline-block;
-    font-size: 32px;
-  }
-  .name-body{
-    display: inline-block;
-    text-align: center;
-  }
-.p0{
+.home-buttons .btn-cv {
+  color: #fff;
+  background-color: #1E90FF;
+  border-color: #1E90FF;
+  padding: 6px 20px 6px 20px;
+
+
+}
+
+.btn-cv:hover {
+  box-shadow: 0 0 20px rgba(76, 76, 191, 0.5);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.btn-cm:hover {
+  box-shadow: 0 0 20px #293f82;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.home-buttons {
+  margin-top: 15px;
+}
+
+.home-buttons .btn-cv:hover {
+  opacity: 80%;
+  transition: 1s;
+}
+
+.name-head {
+  display: inline-block;
+  font-size: 32px;
+}
+
+.name-body {
+  display: inline-block;
+  text-align: center;
+}
+
+.image-about {
+
+  margin-top: 50px;
+}
+
+.content {
+  min-width: 35vw;
+  margin-top: 12rem;
+
+
+}
+
+.dev {
+  font-size: 1rem;
+  font-family: "Poppins";
+  color: rgb(163, 159, 159);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.p0 {
   font-size: 1.1rem;
+  color: rgb(145, 145, 164);
+  margin-bottom: 10px;
+  margin-top: 20px;
+
 }
+
+.bthm {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
 .wave {
   animation-name: wave-animation;
   animation-duration: 4.5s;
@@ -62,7 +108,8 @@ gap:90px;
   10% {
     transform: rotate(14.0deg)
   }
- 20% {
+
+  20% {
     transform: rotate(-8.0deg)
   }
 
@@ -81,8 +128,8 @@ gap:90px;
   60% {
     transform: rotate(0.0deg)
   }
+
   100% {
     transform: rotate(0.0deg)
   }
 }
-

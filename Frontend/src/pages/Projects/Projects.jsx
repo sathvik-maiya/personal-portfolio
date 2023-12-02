@@ -49,11 +49,11 @@ const Projects = () => {
     <>
       <div className="project" id="projects">
         <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
-          CHECK OUT MY PROJECTS
+          CHECK OUT MY {" "} <span className="text-primary">PROJECTS</span>
         </h2>
 
         <hr />
-        <p className="pb-3 text-center text-white">
+        <p className="pb-3 text-center" style={{color:"#B2BEB5"}}>
           These are a few of my collections of projects that showcase my passion
           for creating innovative solutions. Take a peek, and let's journey
           through how I've turned ideas into practical, awesome digital
@@ -79,6 +79,11 @@ const Projects = () => {
                         <h6 className="text-uppercase text-white ">
                           {item.title}
                         </h6>
+                      </div>
+                  
+                      
+                      <div>
+                      
                       </div>
                       <a
                         className="ad-btn"

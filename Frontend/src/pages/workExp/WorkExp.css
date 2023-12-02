@@ -1,6 +1,7 @@
 .work {
   margin-left: 140px;
-  height: 90vh;
+  height: 92vh;
+  margin-top: 60px;
 }
 
 .work-exp {
@@ -10,7 +11,7 @@
 .work-exp h2 {
   font-weight: bold;
   color: whitesmoke;
-    font-family: "Poppins";
+  font-family: "Poppins";
 }
 
 .work-exp hr {
@@ -20,9 +21,9 @@
 }
 
 .work-exp .vertical-timeline-element-title {
-color:white;
+  color: white;
 }
 
 .work-exp .vertical-timeline-element-subtitle {
-    color: #AAA6C3;
+  color: #AAA6C3;
 }

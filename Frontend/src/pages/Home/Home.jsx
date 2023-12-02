@@ -3,49 +3,75 @@ import Typewriter from "typewriter-effect";
 import "./home.css";
 import Flip from "react-reveal/Flip";
 import Fade from "react-reveal/Fade";
-import home from "../../assets/images/home.png";
+import home from "../../assets/images/about.png";
+import Resume from "../../assets/docs/resume.pdf";
+import { FaDownload } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
     <>
-      <div className="container-fluid home-container" id="home">
-        <div className="container home-content">
-          <div className="data">
-            <Flip top>
-              <h3 className="soft">SOFTWARE DEVELOPER</h3>
-
-              <h1 className="hi">
-                HEY! <span class="wave">👋</span>
+      <div className="home-container" id="home">
+        <div className="content">
+              <h1 className="hi text-white">
+                HEY there! <span class="wave">👋</span> 
               </h1>
-              <div className="name-head">
+                <Flip top>
+              <div className="name-head hi text-white">
                 I AM <span></span>
                 <span className="name-body">
-                  <h2 className="name">
-                    <Typewriter
+                  <h2 className="text-primary ">
+                    SATHVIK V MAIYA
+                  </h2>
+                </span>
+              </div>
+            </Flip>
+               <div className="dev">
+                 <Typewriter
                       options={{
-                        strings: [" SATHVIK V MAIYA"],
+                        strings: ["FULL STACK WEB DEVELOPER","FRONTEND DEVELOPER","BACKEND DEVELOPER"],
                         autoStart: true,
                         loop: true,
                       }}
                     />
-                  </h2>
-                </span>
+                
               </div>
-
-              <p className="p0">
-                Am an Indian-based Software Developer passionate and experienced
-                in building web applications.
+                    <p className="p0">
+                I'm a software developer based in India, passionate about creating awesome web applications. 
               </p>
-            </Flip>
-          </div>
-          <div>
-            <Fade>
-              <div className="home-pic">
-                <img src={home} alt="home pic" height={520} width={520} />
-              </div>
-            </Fade>
-          </div>
+              <Fade bottom>
+               <div className="bthm">
+                 <div className="home-buttons">
+                  <a
+                    className="btn btn-cv"
+                    href={Resume}
+                    download="sathvikvmaiya.pdf"
+                  >
+                    <b>Download Resume </b>
+
+                    <FaDownload />
+                  </a>
+                </div>
+                
+                <div className="home-buttons">
+
+                          <Link  to="contact" className="btn btn-cm" >
+                   
+                   <b> Contact Me</b>
+                  </Link>
+                </div>
+               </div>
+            
+                  
+              </Fade>
+             
+         
         </div>
+         <Fade>
+        <div  className="image-about">
+           <img src={home} alt="home pic" height={520} width={600} />
+        </div>
+        </Fade>
       </div>
     </>
   );

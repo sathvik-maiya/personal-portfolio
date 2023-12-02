@@ -9,10 +9,10 @@ const Techstack = () => {
       <div className="container techstack" id="techstack">
         <RubberBand>
           <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
-            MY SKILLS
+           <span  className="text-primary"> MY {" "}</span> SKILLS
           </h2>
-          <hr />
         </RubberBand>
+          <hr/>
         <div className="row">
           {TechstackList.map((tech) => (
             <Fade left>
@@ -26,7 +26,7 @@ const Techstack = () => {
                         </div>
                         <div className="media-body">
                           <h5>{tech.name}</h5>
-                          <p className="exp">{tech.experience}</p>
+                          <p className="exp ">{tech.experience}</p>
                         </div>
                       </div>
                     </div>

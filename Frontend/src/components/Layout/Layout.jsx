@@ -10,6 +10,7 @@ import Projects from "../../pages/Projects/Projects";
 import Certificates from "../../pages/Certificates/Certificates";
 import WorkExp from "../../pages/workExp/WorkExp";
 import Contact from "../../pages/Contact/Contact";
+import { BiSolidHeart } from "react-icons/bi";
 
 const Layout = () => {
   const [toggle, setToggle] = useState(true);
@@ -42,6 +43,12 @@ const Layout = () => {
           <Certificates/>
            <WorkExp />
             <Contact />
+            <div className="pb-3 ms-3 footer">
+            <p className="text-center text-white">
+            Copyright @<span>sathvikvmaiya</span> 2023{" "}
+            <BiSolidHeart color="red" />
+          </p>
+        </div>
         </div>
       </div>
     </>

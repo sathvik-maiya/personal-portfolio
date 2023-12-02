@@ -4,33 +4,48 @@ import axios from "axios";
 import "./Contact.css";
 import { BsFacebook, BsGithub, BsLinkedin ,BsInstagram} from "react-icons/bs";
 import { IoLocationOutline } from "react-icons/io5";
+import Fade from "react-reveal/Fade";
 
 const Contact = () => {
   const [name, setname] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
+  const [phone, setPhone] = useState("");
+    const [subject, setSubject] = useState("");
 
-  //handle submit button
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      if (!name || !email || !msg) {
-        toast.error("Please Provide all fields");
+      if (!name || !email || !msg ||!phone || !subject) {
+        toast.error("Please Provide all fields",{
+          position: toast.POSITION.BOTTOM_CENTER,
+           className: 'foo-bar'
+        });
       }
       const res = await axios.post("/api/v1/portfolio/sendEmail", {
         name,
         email,
         msg,
+        phone,
+        subject
       });
     
       
       if (res.data.success) {
-        toast.success(res.data.message);
+        toast.success(res.data.message,{
+          position: toast.POSITION.BOTTOM_CENTER,
+           className: 'foo-bar'
+        });
         setname("");
         setEmail("");
         setMsg("");
+        setPhone("");
+        setSubject("");
       } else {
-        toast.error(res.data.message);
+        toast.error(res.data.message,{
+          position: toast.POSITION.BOTTOM_CENTER,
+           className: 'foo-bar'
+        });
       }
     } catch (error) {
       console.log(error);
@@ -39,6 +54,7 @@ const Contact = () => {
 
   return (
     <>
+     <Fade bottom>
       <div className="contact" id="contact">
         <div className=" card0 border-0">
           <div className="row">
@@ -86,6 +102,16 @@ const Contact = () => {
                         onChange={(e) => setname(e.target.value)}
                       />
                     </div>
+                       <div className="row px-3 ">
+                      <input
+                        type="number"
+                        name="phone"
+                        placeholder="Enter Your Phone Number"
+                        className="mb-3"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                      />
+                    </div>
                     <div className="row px-3 ">
                       <input
                         type="email"
@@ -94,6 +120,16 @@ const Contact = () => {
                         className="mb-3"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                      />
+                    </div>
+                        <div className="row px-3 ">
+                      <input
+                        type="text"
+                        name="subject"
+                        placeholder="Write your subject"
+                        className="mb-3"
+                        value={subject}
+                        onChange={(e) => setSubject(e.target.value)}
                       />
                     </div>
                     <div className="row px-3">
@@ -118,6 +154,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      </Fade>
     </>
   );
 };

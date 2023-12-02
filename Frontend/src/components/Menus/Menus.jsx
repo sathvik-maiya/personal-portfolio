@@ -90,7 +90,7 @@ const Menus = ({ toggle }) => {
                   offset={-100}
                   duration={100}
                 >
-                  <IoNewspaperOutline size={22}/>
+                  <IoNewspaperOutline color="pink" size={22}/>
                   Certificates
                 </Link>
               </div>
@@ -192,7 +192,7 @@ const Menus = ({ toggle }) => {
                   offset={-100}
                   duration={100}
                 >
-                   <IoNewspaperOutline size={22}/>
+                   <IoNewspaperOutline color="pink"  size={22}/>
                 </Link>
               </div>
               <div className="nav-link">

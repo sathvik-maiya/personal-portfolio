@@ -1,26 +1,28 @@
 .techstack {
   padding-left: 180px;
-  margin-top: 80px;
-  height: 100vh;
+  margin-top: 30px;
+  height: 120vh;
 }
+
 .techstack hr {
-color: #59c378;
+  color: #59c378;
   width: 200px;
-  margin: 15px auto;
+  margin: 10px auto;
+  height: 0.1px;
 }
 
 .techstack h2 {
   font-weight: bold;
-color: white;
-font-family: "Poppins";
+  color: white;
+  font-family: "Poppins";
 }
 
 .techstack .card {
   cursor: pointer;
-    background-color:#14143a;
-    color: white;
-    height: 80px;
-    width: 180px;
+  background-color: #14143a;
+  color: white;
+  height: 80px;
+  width: 180px;
 }
 
 .techstack .tech-icon {
@@ -28,13 +30,13 @@ font-family: "Poppins";
   margin-right: 20px;
 
 }
-.exp{
+
+.exp {
   font-size: 0.7rem;
-color: #aee2bf;
+  color: #aee2bf;
 }
 
 
 .techstack .card:hover {
-transform: scale(1.2);
+  transform: scale(1.2);
 }
-

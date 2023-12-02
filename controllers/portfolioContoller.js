@@ -15,10 +15,10 @@ const nodemailer = require("nodemailer");
 
 const sendEmailController = (req, res) => {
   try {
-    const { name, email, msg } = req.body;
+    const { name, email, msg,phone ,subject} = req.body;
 
     //validation
-    if (!name || !email || !msg) {
+    if (!name || !email || !msg ||!phone || !subject) {
       return res.status(500).send({
         success: false,
         message: "Please Provide All Fields",
@@ -28,11 +28,12 @@ const sendEmailController = (req, res) => {
     transporter.sendMail({
       to: process.env.MY_Mail,
       from: process.env.MY_Mail,
-      subject: "Regarding the portfolio website",
+      subject:subject,
       html: `
         <h5>Detail Information</h5>
         <ul>
           <li><p>Name : ${name}</p></li>
+           <li><p>Phone : ${phone}</p></li>
           <li><p>Email : ${email}</p></li>
           <li><p>Message : ${msg}</p></li>
         </ul>
@@ -41,7 +42,7 @@ const sendEmailController = (req, res) => {
 
     return res.status(200).send({
       success: true,
-      message: "Your Message Send Successfully",
+      message: "Your Message Sent Successfully",
     });
   } catch (error) {
     console.log(error);

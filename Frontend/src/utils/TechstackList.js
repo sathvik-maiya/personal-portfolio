@@ -11,7 +11,6 @@ import {
   SiTypescript,
   SiGithub,
   SiExpress,
-
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 export const TechstackList = [
