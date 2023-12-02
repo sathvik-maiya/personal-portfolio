@@ -11,7 +11,7 @@ const nodemailer = require("nodemailer");
       pass: process.env.SMPT_PASSWORD,
     },
   });
-  console.log(process.env.SMPT_MAIL);
+
 
 
 const sendEmailController = (req, res) => {
