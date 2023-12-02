@@ -12,7 +12,7 @@ const app = express();
 //midlewares
 app.use(
   cors({
-    origin: [""],
+    origin: ["https://personal-portfolio-sathvik-maiya.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true,
   })
