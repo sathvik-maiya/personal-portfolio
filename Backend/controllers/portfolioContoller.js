@@ -14,7 +14,7 @@ const nodemailer = require("nodemailer");
 
 
 
-const sendEmailController = (req, res) => {
+const sendEmailController =(async (req, res) => {
   try {
     const { name, email, msg,phone ,subject} = req.body;
 
@@ -26,7 +26,7 @@ const sendEmailController = (req, res) => {
       });
     }
     //email matter
-    transporter.sendMail({
+    await transporter.sendMail({
       to: process.env.MY_Mail,
       from: process.env.MY_Mail,
       subject:subject,
@@ -53,6 +53,6 @@ const sendEmailController = (req, res) => {
       error,
     });
   }
-};
+})
 
 module.exports = { sendEmailController };
