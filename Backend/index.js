@@ -20,6 +20,9 @@ app.use(
 app.use(express.json());
 
 //routes
+app.get("/", (req, res) => {
+    res.json("Hello");
+})
 app.use("/api/v1/portfolio", require("./routes/portfolioRoute"));
 
 //port
