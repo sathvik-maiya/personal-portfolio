@@ -12,7 +12,7 @@ const app = express();
 //midlewares
 app.use(
   cors({
-    origin: ["https://personal-portfolio-sathvik-maiya.vercel.app/"],
+    origin: ["https://personal-portfolio-sathvik-maiya.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true,
   })
@@ -20,7 +20,7 @@ app.use(
 app.use(express.json());
 
 //routes
-app.use("/api/v1/portfolio", require("./routes/portfolioRoute"));
+app.use("/api/v1/portfolio", require("../routes/portfolioRoute"));
 
 //port
 const PORT = process.env.PORT || 8080;
