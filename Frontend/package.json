@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "proxy":"http://localhost:8080",
+  "proxy":"https://personal-portfolio-api-beta.vercel.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
