@@ -1,6 +1,6 @@
 import React from "react";
 import "./Certificates.css";
-import Fade from "react-reveal/Fade";
+import {Fade} from "react-awesome-reveal";
 import { SiUdemy } from "react-icons/si";
 import { SiCoursera } from "react-icons/si";
 import { SiScrimba } from "react-icons/si";
@@ -64,11 +64,11 @@ const Certificates = () => {
         </h2>
 
         <hr />
-    
+        <Fade direction="up" triggerOnce="true">
         <div className="row" id="ads">
           {projects.map((item) => {
             return (
-              <Fade bottom>
+          
                 <div className="col-md-4 mb-3" key={item._id}>
                   <div className="card rounded">
                   
@@ -93,11 +93,12 @@ const Certificates = () => {
                     </div>
                   </div>
                 </div>
-              </Fade>
+             
             );
           })}
   
         </div>
+         </Fade>
       </div>
     </>
   );

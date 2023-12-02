@@ -1,22 +1,22 @@
 import React from "react";
 import "./Techstack.css";
-import RubberBand from "react-reveal/RubberBand";
-import Fade from "react-reveal/Fade";
+import {Fade} from "react-awesome-reveal";
 import { TechstackList } from "../../utils/TechstackList";
 const Techstack = () => {
   return (
     <>
       <div className="container techstack" id="techstack">
-        <RubberBand>
+        <Fade direction="up" triggerOnce="true" >
           <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
            <span  className="text-primary"> MY {" "}</span> SKILLS
           </h2>
-        </RubberBand>
+        </Fade>
           <hr/>
+            <Fade direction="left" triggerOnce="true">
         <div className="row">
           {TechstackList.map((tech) => (
-            <Fade left>
-              <div key={tech._id} className="col-md-3">
+          
+              <div key={tech._id}  className="col-md-3">
                 <div className="card m-3">
                   <div className="card-content">
                     <div className="card-body">
@@ -33,9 +33,10 @@ const Techstack = () => {
                   </div>
                 </div>
               </div>
-            </Fade>
+           
           ))}
         </div>
+         </Fade>
       </div>
     </>
   );

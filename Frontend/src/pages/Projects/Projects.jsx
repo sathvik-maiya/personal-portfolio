@@ -3,7 +3,7 @@ import "./Projects.css";
 import shopay from "../../assets/images/Shopay.png";
 import pet from "../../assets/images/pet.png";
 import movie from "../../assets/images/movie.png";
-import Fade from "react-reveal/Fade";
+import {Fade} from "react-awesome-reveal";
 
 const Projects = () => {
 
@@ -59,10 +59,11 @@ const Projects = () => {
           through how I've turned ideas into practical, awesome digital
           experiences.
         </p>
+         <Fade direction="up" triggerOnce="true">
         <div className="row" id="ads">
           {projects.map((item) => {
             return (
-              <Fade bottom>
+             
                 <div className="col-md-4" key={item._id}>
                   <div className="card rounded">
                     <div className="card-image">
@@ -96,7 +97,7 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
-              </Fade>
+           
             );
           })}
           <a
@@ -108,6 +109,7 @@ const Projects = () => {
             See more
           </a>
         </div>
+           </Fade>
       </div>
     </>
   );

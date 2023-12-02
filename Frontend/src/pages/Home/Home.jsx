@@ -1,8 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import "./home.css";
-import Flip from "react-reveal/Flip";
-import Fade from "react-reveal/Fade";
+import {Fade} from "react-awesome-reveal";
 import home from "../../assets/images/about.png";
 import Resume from "../../assets/docs/resume.pdf";
 import { FaDownload } from "react-icons/fa";
@@ -16,7 +15,7 @@ const Home = () => {
               <h1 className="hi text-white">
                 HEY there! <span class="wave">👋</span> 
               </h1>
-                <Flip top>
+                <Fade >
               <div className="name-head hi text-white">
                 I AM <span></span>
                 <span className="name-body">
@@ -25,7 +24,7 @@ const Home = () => {
                   </h2>
                 </span>
               </div>
-            </Flip>
+            </Fade>
                <div className="dev">
                  <Typewriter
                       options={{
@@ -39,7 +38,7 @@ const Home = () => {
                     <p className="p0">
                 I'm a software developer based in India, passionate about creating awesome web applications. 
               </p>
-              <Fade bottom>
+              <Fade direction="up" triggerOnce="true">
                <div className="bthm">
                  <div className="home-buttons">
                   <a

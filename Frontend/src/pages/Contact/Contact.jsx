@@ -4,7 +4,7 @@ import axios from "axios";
 import "./Contact.css";
 import { BsFacebook, BsGithub, BsLinkedin ,BsInstagram} from "react-icons/bs";
 import { IoLocationOutline } from "react-icons/io5";
-import Fade from "react-reveal/Fade";
+import {Fade } from "react-awesome-reveal";
 
 const Contact = () => {
   const [name, setname] = useState("");
@@ -54,7 +54,7 @@ const Contact = () => {
 
   return (
     <>
-     <Fade bottom>
+     <Fade direction="up" triggerOnce="true">
       <div className="contact" id="contact">
         <div className=" card0 border-0">
           <div className="row">

@@ -1,13 +1,13 @@
 import React from "react";
 import "./About.css";
-import Fade from "react-reveal/Fade";
+import {Fade} from "react-awesome-reveal";
 import myImg from "../../assets/images/avatar.svg";
 
 
 const About = () => {
   return (
     <div>
-      <Fade bottom>
+      <Fade direction="up" triggerOnce="true">
         <div className="about" id="about">
           <div className="row">
             <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-img">
