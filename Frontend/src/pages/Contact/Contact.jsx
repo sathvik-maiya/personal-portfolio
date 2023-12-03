@@ -46,7 +46,7 @@ axios.defaults.withCredentials = true;
 
   return (
     <>
-     <Fade direction="up" triggerOnce="true">
+     <Fade direction="left" triggerOnce="true">
       <div className="contact" id="contact">
         <div className=" card0 border-0 contact-imp">
             <div className="col-md-6 col-lg-6 col-xl-6 col-sm-12 ">
