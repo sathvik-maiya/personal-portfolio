@@ -20,7 +20,7 @@ axios.defaults.withCredentials = true;
       if (!name || !email || !msg ||!phone || !subject) {
         toast.error("Please Provide all fields",{ className: 'foo-bar'});
       }
-      const res = await axios.post("/api/v1/portfolio/sendEmail", {
+      const res = await axios.post("https://personal-portfolio-api-beta.vercel.app/api/v1/portfolio/sendEmail", {
         name,
         email,
         msg,
