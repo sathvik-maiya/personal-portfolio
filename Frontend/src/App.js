@@ -12,7 +12,7 @@ function App() {
       midtoneColor: 0x10107a,
       lowlightColor: 0x1d115f,
       baseColor: 0x46468c,
-      speed: 2,
+      speed: 3,
       zoom: 3,
     });
   }, []);
@@ -20,7 +20,9 @@ function App() {
   return (
     <>
       <div className="bg" id="vanta">
-        <ToastContainer autoClose={500} />
+        <div style={{ zIndex: "999" }}>
+          <ToastContainer autoClose={500} />
+        </div>
         <Layout />
       </div>
     </>

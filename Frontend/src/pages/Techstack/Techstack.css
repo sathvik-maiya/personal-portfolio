@@ -1,14 +1,14 @@
 .techstack {
   padding-left: 180px;
-  margin-top: 30px;
-  height: 120vh;
+  margin-top: 170px;
+
 }
 
 .techstack hr {
   color: #59c378;
   width: 200px;
   margin: 10px auto;
-  height: 0.1px;
+
 }
 
 .techstack h2 {
@@ -39,4 +39,38 @@
 
 .techstack .card:hover {
   transform: scale(1.2);
+}
+
+@media only screen and (max-width: 630px) {
+
+  .techstack {
+    padding-left: 0px;
+    margin-top: 140px;
+
+
+  }
+
+  .techstack hr {
+    width: 160px;
+  }
+
+  .techstack .card {
+    width: 150px;
+    height: 85px;
+
+  }
+
+  .techstack .tech-icon {
+    font-size: 1.3rem;
+
+    margin-right: 10px;
+  }
+
+  .tech-name {
+    font-size: 18px;
+  }
+
+  .techstack .card:hover {
+    transform: scale(1.1);
+  }
 }

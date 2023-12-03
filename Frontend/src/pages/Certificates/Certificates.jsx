@@ -70,7 +70,7 @@ const Certificates = () => {
             return (
           
                 <div className="col-md-4 mb-3" key={item._id}>
-                  <div className="card rounded">
+                  <div className="card">
                   
                  <div className="card-body text-center">
                       <div className="ad-title m-auto">

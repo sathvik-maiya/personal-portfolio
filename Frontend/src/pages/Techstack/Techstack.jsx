@@ -16,8 +16,8 @@ const Techstack = () => {
         <div className="row">
           {TechstackList.map((tech) => (
           
-              <div key={tech._id}  className="col-md-3">
-                <div className="card m-3">
+              <div key={tech._id}  className="col-md-3 col-6">
+                <div className="card m-2">
                   <div className="card-content">
                     <div className="card-body">
                       <div className="media d-flex justify-content-center">
@@ -25,7 +25,7 @@ const Techstack = () => {
                           <tech.icon className="tech-icon" />
                         </div>
                         <div className="media-body">
-                          <h5>{tech.name}</h5>
+                          <h5 className="tech-name">{tech.name}</h5>
                           <p className="exp ">{tech.experience}</p>
                         </div>
                       </div>

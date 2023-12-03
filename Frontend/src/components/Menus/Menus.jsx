@@ -14,7 +14,7 @@ import {
 import { IoNewspaperOutline } from "react-icons/io5";
 const Menus = ({ toggle }) => {
   return (
-    <>
+    <div className="navbar">
       {toggle ? (
         <>
           <Fade left>
@@ -221,7 +221,7 @@ const Menus = ({ toggle }) => {
           </div>
         </>
       )}
-    </>
+    </div>
   );
 };
 

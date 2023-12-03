@@ -1,7 +1,6 @@
 .certificate {
-    margin-top: 80px;
+    margin-top: 200px;
     margin-left: 165px;
-    height: 110vh;
 }
 
 .certificate hr {
@@ -24,6 +23,7 @@
     background-color: #050816;
     height: 220px;
     width: 300px;
+    border-radius: 15px;
 }
 
 
@@ -63,4 +63,32 @@
 .societyname {
     margin-top: 30px;
     font-family: "Poppins";
+}
+
+
+@media only screen and (max-width: 630px) {
+
+    .certificate {
+        margin-left: 5px;
+        margin-top: 150px;
+
+    }
+
+
+    .certificate hr {
+        width: 230px;
+    }
+
+    .certificate .card {
+
+        height: 200px;
+
+    }
+
+    .ad-btn {
+
+        font-size: 13px;
+        line-height: 40px;
+
+    }
 }

@@ -1,7 +1,7 @@
 .project {
-  margin-top: 20px;
+  margin-top: 190px;
   margin-left: 165px;
-  height: 120vh;
+
 }
 
 .project hr {
@@ -24,11 +24,13 @@
   background-color: #050816;
   height: 350px;
   width: 300px;
+  border-radius: 15px;
 }
 
 .project .card img {
   height: 150px;
   width: 96%;
+  border-radius: 15px;
 }
 
 .card-image {
@@ -112,4 +114,40 @@
   border: 2px solid #138781;
   transition: all 0.5s ease;
   box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+}
+
+
+@media only screen and (max-width: 630px) {
+
+  .project {
+    margin-top: 150px;
+    margin-left: 5px;
+
+  }
+
+  .project hr {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .project h2 {
+    font-size: 22px;
+  }
+
+  .pro-text {
+    font-size: 14px;
+    padding-right: 3px;
+  }
+
+  .project .card {
+    margin-bottom: 30px;
+
+  }
+
+
+  .git-btn {
+
+    margin: 40px auto 20px auto;
+
+  }
 }

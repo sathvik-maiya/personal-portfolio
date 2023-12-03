@@ -46,13 +46,13 @@ export const TechstackList = [
   },
   {
     _id: 6,
-    name: "React JS",
+    name: "React.js",
     icon: SiReact,
     experience: "INTERMEDIATE",
   },
   {
     _id: 7,
-    name: "Nextjs",
+    name: "Next.js",
     icon: TbBrandNextjs,
     experience: "BASIC",
   },
@@ -71,13 +71,13 @@ export const TechstackList = [
 
   {
     _id: 10,
-    name: "Node JS ",
+    name: "Node.js",
     icon: FaNodeJs,
     experience: "INTERMEDIATE",
   },
   {
     _id: 11,
-    name: "Express JS ",
+    name: "Express.js",
     icon: SiExpress,
     experience: "INTERMEDIATE",
   },

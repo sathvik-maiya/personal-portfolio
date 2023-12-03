@@ -17,10 +17,7 @@ const Contact = () => {
     e.preventDefault();
     try {
       if (!name || !email || !msg ||!phone || !subject) {
-        toast.error("Please Provide all fields",{
-          position: toast.POSITION.BOTTOM_CENTER,
-           className: 'foo-bar'
-        });
+        toast.error("Please Provide all fields",{ className: 'foo-bar'});
       }
       const res = await axios.post("/api/v1/portfolio/sendEmail", {
         name,
@@ -32,20 +29,14 @@ const Contact = () => {
     
       
       if (res.data.success) {
-        toast.success(res.data.message,{
-          position: toast.POSITION.BOTTOM_CENTER,
-           className: 'foo-bar'
-        });
+        toast.success(res.data.message,{ className: 'foo-bar'});
         setname("");
         setEmail("");
         setMsg("");
         setPhone("");
         setSubject("");
       } else {
-        toast.error(res.data.message,{
-          position: toast.POSITION.BOTTOM_CENTER,
-           className: 'foo-bar'
-        });
+        toast.error(res.data.message,{ className: 'foo-bar'});
       }
     } catch (error) {
       console.log(error);
@@ -56,12 +47,12 @@ const Contact = () => {
     <>
      <Fade direction="up" triggerOnce="true">
       <div className="contact" id="contact">
-        <div className=" card0 border-0">
-          <div className="row">
-            <div className="col-md-6 col-lg-6 col-xl-6 col-sm-12">
+        <div className=" card0 border-0 contact-imp">
+            <div className="col-md-6 col-lg-6 col-xl-6 col-sm-12 ">
             <div className="row continfo">
-                     <h1 className=" mb-5 text-center text-uppercase conhead">
+                     <h1 className="text-center text-uppercase conhead">
                        Contact <span className="text-primary">Me</span>
+                       <hr className="cont-hr"/>
                      </h1>
                      <div className="loc ">
                       <IoLocationOutline color="white" size={30}/>
@@ -83,14 +74,18 @@ const Contact = () => {
              <BsInstagram color="white" size={30} className="ms-4" />
                </a>
          </div>
+
+         <div className="text-center or text-white">Or</div>
                     </div>
+
           
             </div>
             <div className="col-lg-6 col-md-6 ">
              
-                <div className="card2 d-flex px-5 py-5">
+                <div className="card2 d-flex ">
+                    
                   <div className="row">
-                   
+                     
 
                     <div className="row px-3">
                       <input
@@ -151,8 +146,8 @@ const Contact = () => {
                 </div>
            
             </div>
-          </div>
-        </div>
+            
+               </div>
       </div>
       </Fade>
     </>

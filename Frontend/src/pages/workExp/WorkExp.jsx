@@ -32,7 +32,7 @@ const WorkExp = () => {
               <h4 className="vertical-timeline-element-subtitle">
                 HealTether
               </h4>
-              <p>
+              <p className="info-work">
                 Currently interning at HealTether, I'm learning to build web apps using MongoDB, Express.js, React, and Node.js. I collaborate with a team to create user-friendly applications that merge technology with healthcare. It's an exciting journey where I contribute ideas, learn full-stack development and mastering these technologies. 
               </p>
             </VerticalTimelineElement>

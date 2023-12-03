@@ -1,14 +1,20 @@
 .home-container {
-  height: 100vh;
   margin-left: 150px;
   display: flex;
   flex-direction: row;
-
-
 }
 
 .hi {
   font-family: "Poppins";
+}
+
+.hi2 {
+  font-family: "Poppins";
+}
+
+.image-home {
+  height: 520px;
+  width: 600px;
 }
 
 .home-buttons .btn-cm {
@@ -60,7 +66,7 @@
 
 .image-about {
 
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .content {
@@ -131,5 +137,48 @@
 
   100% {
     transform: rotate(0.0deg)
+  }
+}
+
+
+@media only screen and (max-width: 630px) {
+
+  .home-container {
+    flex-direction: column;
+
+    margin-left: 10px;
+
+  }
+
+  .content {
+    margin-top: 8rem;
+  }
+
+  .hi2 {
+    font-size: 25px;
+  }
+
+  .home-buttons .btn-cv {
+    padding: 7px 12px 7px 12px;
+    font-size: 16px;
+  }
+
+  .home-buttons .btn-cm {
+    padding: 7px 12px 7px 12px;
+
+  }
+
+  .bthm {
+    gap: 24px;
+  }
+
+  .image-home {
+    height: 315px;
+    width: 345px;
+  }
+
+  .image-about {
+    margin-top: 40px;
+
   }
 }

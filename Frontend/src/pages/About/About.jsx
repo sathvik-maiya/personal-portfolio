@@ -7,15 +7,17 @@ import myImg from "../../assets/images/avatar.svg";
 const About = () => {
   return (
     <div>
-      <Fade direction="up" triggerOnce="true">
+      <Fade direction="left" >
         <div className="about" id="about">
           <div className="row">
             <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-img">
+               <h1 className="text-white phone-about">About {" "}<span className="text-primary">me</span></h1>
+                 <hr className="phone-hr"/>
                <img src={myImg}  height={300} width={300}alt="about_pic" />
             </div>
             <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-content ">
-              <h1 className="text-white">About {" "}<span className="text-primary">me</span></h1>
-              <hr />
+              <h1 className="text-white lap-about">About {" "}<span className="text-primary">me</span></h1>
+              <hr className="lap-hr" />
               
               <p className="p1">
                 I'm a skilled <b className="text-primary"> SOFTWARE DEVELOPER</b> fluent in the language

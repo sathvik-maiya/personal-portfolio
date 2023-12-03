@@ -10,6 +10,7 @@ import Projects from "../../pages/Projects/Projects";
 import Certificates from "../../pages/Certificates/Certificates";
 import WorkExp from "../../pages/workExp/WorkExp";
 import Contact from "../../pages/Contact/Contact";
+import Header from "../../pages/Header/Header";
 import { BiSolidHeart } from "react-icons/bi";
 
 const Layout = () => {
@@ -35,6 +36,7 @@ const Layout = () => {
           <Menus toggle={toggle} />
         </div>
         <div className="container">
+          <Header />
           <Home />
           <About />
           <Education />

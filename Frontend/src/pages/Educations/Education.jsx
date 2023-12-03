@@ -29,7 +29,7 @@ const Education = () => {
             <p className="vertical-timeline-element-subtitle">
               Dr.Ambedkar Institute of Technology,Bangalore
             </p>
-            <h5>Computer science</h5>
+            <h6 >Computer science</h6>
             <h6>CGPA:9.3</h6>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -44,7 +44,7 @@ const Education = () => {
             <p className="vertical-timeline-element-subtitle">
               MES Pu College,Malleshwaram
             </p>
-            <h5>Science</h5>
+            <h6>Science</h6>
             <h6>Percentage:93%</h6>
           </VerticalTimelineElement>
           <VerticalTimelineElement

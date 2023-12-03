@@ -1,7 +1,6 @@
 .work {
   margin-left: 140px;
-  height: 92vh;
-  margin-top: 60px;
+  margin-top: 180px;
 }
 
 .work-exp {
@@ -26,4 +25,31 @@
 
 .work-exp .vertical-timeline-element-subtitle {
   color: #AAA6C3;
+}
+
+
+@media only screen and (max-width: 630px) {
+  .work {
+    margin-left: 5px;
+    margin-top: 140px;
+  }
+
+  .work-exp hr {
+    width: 250px;
+    margin-bottom: 40px;
+  }
+
+  .work-exp .vertical-timeline-element-title {
+    font-size: 20px;
+  }
+
+  .work-exp .vertical-timeline-element-subtitle {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .info-work {
+    font-weight: 300 !important;
+
+  }
 }

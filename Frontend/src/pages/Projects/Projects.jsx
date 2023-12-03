@@ -53,7 +53,7 @@ const Projects = () => {
         </h2>
 
         <hr />
-        <p className="pb-3 text-center" style={{color:"#B2BEB5"}}>
+        <p className="pb-3 text-center pro-text" style={{color:"#B2BEB5"}}>
           These are a few of my collections of projects that showcase my passion
           for creating innovative solutions. Take a peek, and let's journey
           through how I've turned ideas into practical, awesome digital
@@ -65,7 +65,7 @@ const Projects = () => {
             return (
              
                 <div className="col-md-4" key={item._id}>
-                  <div className="card rounded">
+                  <div className="card  ">
                     <div className="card-image">
                       <img src={item.image_url} alt="" />
                     </div>

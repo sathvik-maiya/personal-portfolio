@@ -1,0 +1,83 @@
+.header {
+    display: none;
+}
+
+
+@media only screen and (max-width: 630px) {
+    .header {
+        visibility: visible;
+        background: linear-gradient(to bottom, #0d012c 0%, #0f032c 100%);
+        height: 18vw;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 300;
+        right: 0px;
+        box-shadow: rgba(16, 16, 85, 0.24) 0px 3px 8px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+
+    .header-navbar {
+        margin-top: 15px;
+        margin-left: 110px;
+    }
+
+    .header-name {
+        margin-top: 15px;
+        margin-left: 15px;
+        font-family: 'BestermindRegular';
+        font-size: 30px;
+    }
+
+
+    .sidenav {
+        position: fixed;
+        top: 0;
+        left: 6rem;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, #020d28, rgb(8, 15, 44));
+
+        padding-left: 25px;
+        z-index: 400;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(0);
+    }
+
+
+    .sidenavitem {
+        color: white;
+        margin-top: 80px;
+        margin-left: 50px;
+
+    }
+
+    .sidenavlink {
+        margin-top: 30px;
+        cursor: pointer;
+    }
+
+    .sidenavlink svg {
+        margin-right: 10px;
+    }
+
+    .sidenavlink :hover {
+        color: #3B71CA;
+    }
+
+    .sidenavlink .active {
+        color: #3B71CA;
+        border-left: 5px solid #3B71CA;
+        padding-left: 10px;
+        text-decoration: none;
+    }
+
+    .cross {
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+
+}

@@ -1,7 +1,8 @@
 .contact {
   margin-left: 130px;
-  margin-top: 40px;
-  height: 110vh;
+  margin-top: 140px;
+  margin-bottom: 80px;
+
 
 }
 
@@ -9,6 +10,11 @@
   font-weight: bold;
   color: whitesmoke;
   font-family: "Poppins";
+  margin-bottom: 50px;
+}
+
+.cont-hr {
+  visibility: hidden;
 }
 
 .card2 {
@@ -16,10 +22,7 @@
   background-color: #050816;
   border-radius: 15px;
   margin-top: 50px;
-}
-
-.foo-bar {
-  margin-right: 50px;
+  padding: 50px 50px;
 }
 
 .continfo {
@@ -33,8 +36,8 @@
 }
 
 .loc {
-  margin-left: 100px;
-  margin-bottom: 20px;
+  margin-left: 110px;
+  margin-bottom: 50px;
   color: whitesmoke;
   text-decoration: none;
   cursor: pointer;
@@ -43,7 +46,7 @@
 }
 
 .log {
-  margin-left: 100px;
+  margin-left: 90px;
   cursor: pointer;
 }
 
@@ -88,4 +91,72 @@ button:focus {
 .button:hover {
   background-color: #000;
   color: white;
+}
+
+.contact-imp {
+  display: flex;
+  flex-direction: row;
+}
+
+.or {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 630px) {
+
+  .contact {
+    margin-left: 5px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+
+  }
+
+  .loc {
+    margin-left: 35px;
+    margin-bottom: 25px;
+  }
+
+  .log {
+    margin-left: 35px;
+    margin-bottom: 30px;
+
+  }
+
+  .contact-imp {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .contact hr {
+    color: #59c378;
+    width: 200px;
+    margin: 20px auto;
+  }
+
+  .card2 {
+    margin: 0px 10px;
+    padding: 25px 25px;
+
+  }
+
+  .cont-hr {
+    visibility: visible;
+  }
+
+  .conhead {
+    margin-bottom: 20px;
+  }
+
+  .or {
+    visibility: visible;
+    font-family: "Poppins";
+    font-weight: bolder;
+    margin-bottom: 30px;
+  }
+
+  .foo-bar {
+    margin-left: 60px;
+    margin-top: 40px;
+  }
 }
