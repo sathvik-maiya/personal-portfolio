@@ -12,10 +12,6 @@
   font-family: "Poppins";
 }
 
-.image-home {
-  height: 520px;
-  width: 600px;
-}
 
 .home-buttons .btn-cm {
   color: #fff;
@@ -63,10 +59,13 @@
   display: inline-block;
   text-align: center;
 }
-
+.image-home {
+  height: 420px;
+  width: 380px;
+}
 .image-about {
 
-  margin-top: 70px;
+  margin-top: 130px;
 }
 
 .content {
@@ -159,12 +158,13 @@
   }
 
   .home-buttons .btn-cv {
-    padding: 7px 12px 7px 12px;
-    font-size: 16px;
+    padding: 3px 12px 3px 12px;
+    font-size: 15px;
   }
 
   .home-buttons .btn-cm {
-    padding: 7px 12px 7px 12px;
+    padding: 3px 12px 3px 12px;
+    font-size: 15px;
 
   }
 
@@ -172,13 +172,13 @@
     gap: 24px;
   }
 
-  .image-home {
-    height: 315px;
-    width: 345px;
-  }
-
-  .image-about {
-    margin-top: 40px;
-
-  }
+    .image-home {
+      height: 320px;
+      width: 320px;
+    }
+  
+    .image-about {
+  
+      margin-top: 70px;
+    }
 }

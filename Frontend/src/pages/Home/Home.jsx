@@ -2,7 +2,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import "./Home.css";
 import {Fade} from "react-awesome-reveal";
-import home from "../../assets/images/about.png";
+import home from "../../assets/images/intro.svg";
 import Resume from "../../assets/docs/resume.pdf";
 import { FaDownload } from "react-icons/fa";
 import { Link } from "react-scroll";
@@ -69,7 +69,7 @@ const Home = () => {
         </Fade>
          <Fade direction="right">
         <div  className="image-about">
-           <img src={home} alt="home pic" className="image-home" />
+           <img src={home} alt="home pic" className="image-home"   />
         </div>
         </Fade>
       </div>

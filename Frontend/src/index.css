@@ -12,7 +12,9 @@
     url('./assets/fonts/Bestermind/BestermindRegular.ttf') format('truetype'),
 }
 
-
+.bg{
+  background-color: #020427;
+}
  body{
   overflow-x: hidden;
 }

@@ -19,7 +19,7 @@ axios.defaults.withCredentials = true;
       if (!name || !email || !msg ||!phone || !subject) {
         toast.error("Please Provide all fields",{ className: 'foo-bar'});
       }
-      const res = await axios.post("https://personal-portfolio-api-beta.vercel.app/api/v1/portfolio/sendEmail", {
+      const res = await axios.post("/api/v1/portfolio/sendEmail", {
         name,
         email,
         msg,
@@ -45,7 +45,7 @@ axios.defaults.withCredentials = true;
 
   return (
     <>
-     <Fade direction="up" triggerOnce="true">
+     <Fade direction="left" triggerOnce="true">
       <div className="contact" id="contact">
         <div className=" card0 border-0 contact-imp">
             <div className="col-md-6 col-lg-6 col-xl-6 col-sm-12 ">
