@@ -12,14 +12,14 @@ const Contact = () => {
   const [msg, setMsg] = useState("");
   const [phone, setPhone] = useState("");
     const [subject, setSubject] = useState("");
-
+axios.defaults.withCredentials = true;
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       if (!name || !email || !msg ||!phone || !subject) {
         toast.error("Please Provide all fields",{ className: 'foo-bar'});
       }
-      const res = await axios.post("/api/v1/portfolio/sendEmail", {
+      const res = await axios.post("https://personal-portfolio-api-beta.vercel.app/api/v1/portfolio/sendEmail", {
         name,
         email,
         msg,
