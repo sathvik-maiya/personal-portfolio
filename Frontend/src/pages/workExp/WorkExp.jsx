@@ -22,7 +22,7 @@ const WorkExp = () => {
               contentArrowStyle={{
                 borderRight: "7px solid  white",
               }}
-              date="November 2023 - present"
+              date="November 2023 - January 2024"
               iconStyle={{ background: "#5F9EA0", color: "#fff" }}
               icon={<SiReact />}
             >
