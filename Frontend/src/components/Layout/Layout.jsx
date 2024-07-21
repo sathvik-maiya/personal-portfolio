@@ -47,7 +47,7 @@ const Layout = () => {
             <Contact />
             <div className="pb-3 ms-3 footer">
             <p className="text-center text-white">
-            Copyright @<span>sathvikvmaiya</span> 2023{" "}
+            Copyright @<span>sathvikvmaiya</span> 2024{" "}
             <BiSolidHeart color="red" />
           </p>
         </div>
