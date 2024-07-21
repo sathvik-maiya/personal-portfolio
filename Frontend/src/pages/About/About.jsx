@@ -27,8 +27,8 @@ const About = () => {
                 reality by creating applications that work smoothly and
                 efficiently. Let's team up and bring your vision to life.
               </p>
-              <p className="p2">
-                I'm a <b className="text-primary"> MERN stack and Java full stack web developer</b>passionate about web
+                <p className="p2">
+                I'm a <b className="text-primary">MERN/JAVA DEVELOPER </b>passionate about web
                 development.
               </p>
             </div>
