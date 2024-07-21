@@ -28,10 +28,9 @@ const About = () => {
                 efficiently. Let's team up and bring your vision to life.
               </p>
                 <p className="p2">
-                I'm a <b className="text-primary">MERN/JAVA DEVELOPER </b>passionate about web
-                development.
+        I’m a web developer passionate about the <b className="text-primary">MERN </b> stack and <b className="text-primary">Spring Boot</b>.
               </p>
-              I’m a web developer passionate about the <b className="text-primary">MERN </b> stack and <b className="text-primary">Spring Boot</b>.
+         
             </div>
           </div>
         </div>
