@@ -15,6 +15,7 @@ import {
   SiRedux,
   SiJunit5,
   SiJest,
+  SiCodio,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 export const TechstackList = [
@@ -100,36 +101,42 @@ export const TechstackList = [
   },
   {
     _id: 14,
+    name: "C",
+    icon: SiCodio,
+    experience: "INTERMEDIATE",
+  },
+  {
+    _id: 15,
     name: "Java",
     icon: FaJava,
     experience: "INTERMEDIATE",
   },
   {
-    _id: 15,
+    _id: 16,
     name: "SpringBoot",
     icon: SiSpringboot,
     experience: "INTERMEDIATE",
   },
   {
-    _id: 16,
+    _id: 17,
     name: "Redux",
     icon: SiRedux,
     experience: "INTERMEDIATE",
   },
   {
-    _id: 17,
+    _id: 18,
     name: "JUnit",
     icon: SiJunit5,
     experience: "INTERMEDIATE",
   },
   {
-    _id: 18,
+    _id: 19,
     name: "Jest",
     icon: SiJest,
     experience: "INTERMEDIATE",
   },
   {
-    _id: 19,
+    _id: 20,
     name: "Git",
     icon: SiGithub,
     experience: "INTERMEDIATE",
