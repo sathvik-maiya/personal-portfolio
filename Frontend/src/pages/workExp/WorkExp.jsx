@@ -54,7 +54,7 @@ Currently interning at NimbleWork. I work on developing and maintaining web appl
               icon={<SiReact />}
             >
               <h3 className="vertical-timeline-element-title">
-                Full Stack Developer intern
+                Full Stack Developer Intern
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
                 Nectworks Technology
