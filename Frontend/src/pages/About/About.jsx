@@ -31,6 +31,7 @@ const About = () => {
                 I'm a <b className="text-primary">MERN/JAVA DEVELOPER </b>passionate about web
                 development.
               </p>
+              I’m a web developer passionate about the <b className="text-primary">MERN </b> stack and <b className="text-primary">Spring Boot</b>.
             </div>
           </div>
         </div>
