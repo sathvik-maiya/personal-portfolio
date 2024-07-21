@@ -11,6 +11,10 @@ import {
   SiTypescript,
   SiGithub,
   SiExpress,
+  SiSpringboot,
+  SiRedux,
+  SiJunit5,
+  SiJest,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 export const TechstackList = [
@@ -100,9 +104,32 @@ export const TechstackList = [
     icon: FaJava,
     experience: "INTERMEDIATE",
   },
-
   {
     _id: 15,
+    name: "SpringBoot",
+    icon: SiSpringboot,
+    experience: "INTERMEDIATE",
+  },
+  {
+    _id: 16,
+    name: "Redux",
+    icon: SiRedux,
+    experience: "INTERMEDIATE",
+  },
+  {
+    _id: 17,
+    name: "JUnit",
+    icon: SiJunit5,
+    experience: "INTERMEDIATE",
+  },
+  {
+    _id: 18,
+    name: "Jest",
+    icon: SiJest,
+    experience: "INTERMEDIATE",
+  },
+  {
+    _id: 19,
     name: "Git",
     icon: SiGithub,
     experience: "INTERMEDIATE",
