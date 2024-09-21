@@ -62,7 +62,7 @@ axios.defaults.withCredentials = true;
                      </div>
                    
                  <div className="log">
-                <a href="https://www.linkedin.com/in/sathvik-v-maiya-034939254/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/sathvikmaiya/" target="_blank" rel="noopener noreferrer">
                <BsLinkedin color="blue" size={30} className="ms-4 " />
                </a>
                 <a href="https://github.com/sathvik-maiya" target="_blank" rel="noopener noreferrer">
